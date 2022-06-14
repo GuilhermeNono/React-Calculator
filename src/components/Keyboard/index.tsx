@@ -1,6 +1,5 @@
 import React from "react";
 import Key from "../Key";
-
 import { Container, Pad, Wrapper } from "./styles";
 
 const Keyboard = () => {
@@ -8,26 +7,26 @@ const Keyboard = () => {
     <Container>
         <Wrapper>
           <Pad>
-            <Key digit={"AC"} />
-            <Key digit={"+/-"}/>
-            <Key digit={"%"} />
-            <Key digit={"/"} />
-            <Key digit={"7"} />
-            <Key digit={"8"} />
-            <Key digit={"9"} />
-            <Key digit={"X"} />
-            <Key digit={"4"} />
-            <Key digit={"5"} />
-            <Key digit={"6"} />
-            <Key digit={"-"} />
-            <Key digit={"1"} />
-            <Key digit={"2"} />
-            <Key digit={"3"} />
-            <Key digit={"+"} />
+            <Key color={"#3692F9"} digit={"AC"} />
+            <Key color={"#3692F9"} digit={"+/-"}/>
+            <Key color={"#3692F9"} digit={"%"} />
+            <Key color={"#3692F9"} digit={"/"} />
+            <Key isCircle={true} digit={"7"} />
+            <Key isCircle={true} digit={"8"} />
+            <Key isCircle={true} digit={"9"} />
+            <Key color={"#3692F9"} digit={"X"} />
+            <Key isCircle={true} digit={"4"} />
+            <Key isCircle={true} digit={"5"} />
+            <Key isCircle={true} digit={"6"} />
+            <Key color={"#3692F9"} digit={"-"} />
+            <Key isCircle={true} digit={"1"} />
+            <Key isCircle={true} digit={"2"} />
+            <Key isCircle={true} digit={"3"} />
+            <Key color={"#3692F9"} digit={"+"} />
             <Key digit={"I"} />
-            <Key digit={"0"} />
+            <Key isCircle={true} digit={"0"} />
             <Key digit={"."} />
-            <Key digit={"="} />
+            <Key color={"#78FF86"} digit={"="} />
           </Pad>
         </Wrapper>
     </Container>

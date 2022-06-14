@@ -1,18 +1,17 @@
 import React from 'react';
 
-import { Container, Button } from './styles';
+import { Container, ButtonK } from './styles';
 
 interface Props {
     digit: string;
     isCircle?:boolean;
+    color?:string;
 }
 
-const Key = ({digit}:Props) => {
+const Key = ({digit, isCircle, color}:Props) => {
   return (
     <Container>
-        <Button>
-        {digit}
-        </Button>
+        <ButtonK color={color} circle={isCircle}>{digit}</ButtonK>
     </Container>
   );
 }
