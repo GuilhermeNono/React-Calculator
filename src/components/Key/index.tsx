@@ -6,14 +6,24 @@ interface Props {
     digit: string;
     isCircle?:boolean;
     color?:string;
+    clickEvent?: any;
 }
 
-const Key = ({digit, isCircle, color}:Props) => {
+const Key = ({clickEvent, digit, isCircle, color}:Props) => {
   return (
     <Container>
-        <ButtonK color={color} circle={isCircle}>{digit}</ButtonK>
+        <ButtonK onClick={() => {
+          switch (digit) {
+            case "AC":
+              clickEvent();
+              break;
+            default:
+              clickEvent(digit)
+              break;
+          }
+        }} color={color} circle={isCircle}>{digit}</ButtonK>
     </Container>
   );
 }
 
-export default Key;
+export default Key; 

@@ -14,4 +14,9 @@ font-size: 30px;
 text-align: center;
 background: #242730;
 cursor: pointer;
+transition-duration: 150ms;
+
+ &:hover {
+  background: #2e323d;
+ }
 `;

@@ -1,34 +1,40 @@
 import React from "react";
 import Key from "../Key";
+
 import { Container, Pad, Wrapper } from "./styles";
 
-const Keyboard = () => {
+interface Props {
+  inputFunc: (num: string) => void;
+  clearInput: () => void;
+}
+
+const Keyboard = ({clearInput, inputFunc }: Props) => {
   return (
     <Container>
-        <Wrapper>
-          <Pad>
-            <Key color={"#3692F9"} digit={"AC"} />
-            <Key color={"#3692F9"} digit={"+/-"}/>
-            <Key color={"#3692F9"} digit={"%"} />
-            <Key color={"#3692F9"} digit={"/"} />
-            <Key isCircle={true} digit={"7"} />
-            <Key isCircle={true} digit={"8"} />
-            <Key isCircle={true} digit={"9"} />
-            <Key color={"#3692F9"} digit={"X"} />
-            <Key isCircle={true} digit={"4"} />
-            <Key isCircle={true} digit={"5"} />
-            <Key isCircle={true} digit={"6"} />
-            <Key color={"#3692F9"} digit={"-"} />
-            <Key isCircle={true} digit={"1"} />
-            <Key isCircle={true} digit={"2"} />
-            <Key isCircle={true} digit={"3"} />
-            <Key color={"#3692F9"} digit={"+"} />
-            <Key digit={"I"} />
-            <Key isCircle={true} digit={"0"} />
-            <Key digit={"."} />
-            <Key color={"#78FF86"} digit={"="} />
-          </Pad>
-        </Wrapper>
+      <Wrapper>
+        <Pad>
+          <Key clickEvent={clearInput} color={"#3692F9"} digit={"AC"} />
+          <Key clickEvent={inputFunc} color={"#3692F9"} digit={"+/-"} />
+          <Key clickEvent={inputFunc} color={"#3692F9"} digit={"%"} />
+          <Key clickEvent={inputFunc} color={"#3692F9"} digit={"/"} />
+          <Key clickEvent={inputFunc} isCircle={true} digit={"7"} />
+          <Key clickEvent={inputFunc} isCircle={true} digit={"8"} />
+          <Key clickEvent={inputFunc} isCircle={true} digit={"9"} />
+          <Key clickEvent={inputFunc} color={"#3692F9"} digit={"X"} />
+          <Key clickEvent={inputFunc} isCircle={true} digit={"4"} />
+          <Key clickEvent={inputFunc} isCircle={true} digit={"5"} />
+          <Key clickEvent={inputFunc} isCircle={true} digit={"6"} />
+          <Key clickEvent={inputFunc} color={"#3692F9"} digit={"-"} />
+          <Key clickEvent={inputFunc} isCircle={true} digit={"1"} />
+          <Key clickEvent={inputFunc} isCircle={true} digit={"2"} />
+          <Key clickEvent={inputFunc} isCircle={true} digit={"3"} />
+          <Key clickEvent={inputFunc} color={"#3692F9"} digit={"+"} />
+          <Key clickEvent={inputFunc} digit={"I"} />
+          <Key clickEvent={inputFunc} isCircle={true} digit={"0"} />
+          <Key clickEvent={inputFunc} digit={"."} />
+          <Key clickEvent={inputFunc} color={"#78FF86"} digit={"="} />
+        </Pad>
+      </Wrapper>
     </Container>
   );
 };

@@ -1,22 +1,28 @@
 import React, { useState } from "react";
+import { Operator } from "../../lib/types";
 import Keyboard from "../Keyboard";
 import { Container, Body, Result, Count, Screen } from "./styles";
 
-const Calculator: React.FC = () => {
+const Calculator = () => {
+  const [input, setInput] = useState<string>("");
+  const [operator, setOperator] = useState<string>("")
 
-  const [operator, setOperator] = useState<string>("x")
-  const [firstNumber, setFirstNumber] = useState<number>(10)
-  const [secondNumber, setSecondNumber] = useState<number>(0)
-  const [result, setResult] = useState("")
+  function inputNum(num: string) {
+    setInput(input + num);
+  }
+
+  function clearInput() {
+    setInput("");
+  }
 
   return (
     <Container>
       <Body>
         <Screen>
-          <Count>{firstNumber} {operator} {secondNumber}</Count>
-          <Result>0</Result>
+          <Count>{input}</Count>
+          <Result>0 </Result>
         </Screen>
-        <Keyboard />
+        <Keyboard clearInput={clearInput} inputFunc={inputNum} />
       </Body>
     </Container>
   );
