@@ -1,5 +1,3 @@
-
-Calculadora desenvolvida utilizando React, Typescript e Styled Components.
 # React-Calculator
 ## 📖 Descrição 
 <p>Calculadora simples desenvolvida com React, Typescript e Styled-Components. </p>
@@ -16,6 +14,7 @@ Calculadora desenvolvida utilizando React, Typescript e Styled Components.
 
 #
 ![Interface](https://i.imgur.com/rzSiDnM.png)
+#
 
 ### 🛠 Tecnologias
 
