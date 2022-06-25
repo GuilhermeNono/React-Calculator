@@ -2,7 +2,7 @@
 ## 📖 Descrição 
 <p>Calculadora simples desenvolvida com React, Typescript e Styled-Components. </p>
 
-<a href="nonocalculatorreact.netlify.app" target="_blank">- LIVE DEMO</a>
+<a href="https://nonocalculatorreact.netlify.app/" target="_blank">- LIVE DEMO</a>
 
 ##
 
