@@ -13,7 +13,7 @@
 - [x] Adicionar as funcionalidades a calculadora.
 
 #
-![Interface](https://i.imgur.com/rzSiDnM.png)
+![Interface](https://i.imgur.com/4xo00cX.png)
 #
 
 ### 🛠 Tecnologias
