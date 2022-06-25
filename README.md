@@ -10,7 +10,7 @@
 
 - [x] Desenvolver o wireframe da pagina.
 - [x] Desenvolver todo o frontend da pagina.
-- [ ] Adicionar as funcionalidades a calculadora.
+- [x] Adicionar as funcionalidades a calculadora.
 
 #
 ![Interface](https://i.imgur.com/rzSiDnM.png)
