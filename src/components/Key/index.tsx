@@ -21,7 +21,7 @@ const Key = ({clickEvent, digit, isCircle, color}:Props) => {
               clickEvent(digit)
               break;
           }
-        }} color={color} circle={isCircle}>{digit}</ButtonK>
+        }} color={color} circle={isCircle} value={digit} >{digit}</ButtonK>
     </Container>
   );
 }

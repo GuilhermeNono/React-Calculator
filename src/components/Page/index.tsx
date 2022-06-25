@@ -1,4 +1,5 @@
 import React from "react";
+import Github from "../../Github";
 
 import Calculator from "../Calculator";
 
@@ -10,7 +11,9 @@ const Page = () => {
       <Wrapper>
         <Calculator />
       </Wrapper>
+      <Github />
     </Container>
+    
   );
 };
 
